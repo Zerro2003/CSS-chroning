@@ -3,15 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Card</title>
+    <title>FeWo-direkt</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="card">
-      <img src="https://i.pravatar.cc/150?img=3" alt="Profile Picture" />
-      <h2>Jane Doe</h2>
-      <p>Frontend Developer</p>
-      <a href="#">Contact Me</a>
-    </div>
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          src="https://www.fewo-direkt.de/_dms/header/logo.svg?locale=de_DE&siteid=9003020&2&6f9ec7db"
+          alt="FeWo-direkt logo"
+        />
+      </div>
+      <div class="nav-items">
+        <div class="download-app">
+          <button>
+            Download the app
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAXFJREFUWEftl71KA0EUhc/ZNS8gBMFXsBRSBbTQiE+hlZa2YqERCwsrS630KcRso2AVsPQR/IGALxA3R4ZkNRt2d4iZjVFmm2WZmXvOfPfOHZaYsYcz5gfekC0jnlDphBqKmwKPjBCh4xbDpk20aHzilHlDNvyekCdkI2Ab9zX0q4QM/sRAXsdtSDtAbzGZJ3AVwMrg+57Q3fcmgpcWeZm1qTytVKdeV0/J4ohBZhffkGo96AFAxUKvG4D1W7KdNS9Pa2xDJrihJOii+E7ibh4ds86poX7A+ArgVrYpXUcMt4sMOze0LFXm+6mrjQi338H6I9mdqiEjtilVP6AnANWBeGcOXLohO7bT6ZxQIjhU5Cgq4lGDpRlKity8i4p4qoZs6Sn92P/EwL8h9AZgwQWBMWK8Rgy+rqJUp24oPhW4P0YwB1N1EjE8TAKl7yuJa8ABob2h3uJANDPEM8HzFnk2PDrxb5Brt96Qjagn9OcIfQLhrOslCpoNTgAAAABJRU5ErkJggg=="
+            />
+          </button>
+        </div>
+        <ul class="menu">
+          <li>Travel Planner</li>
+          <li>Register your property</li>
+          <li>Help</li>
+          <li>My Travels</li>
+          <li>Announce</li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="hero-section">
+      <div class="hero-content">
+        <h1>FeWo-direkt – that's how holidays work.</h1>
+
+        <div class="search-container">
+          <div class="search-box location">
+            <div class="icon">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAABANJREFUWEftl2nIVkUUx39mZosFZtFGVqRSgmDYIkULFS1oRi6IQop+0MowKiLavlhZRBQJ7US5tCAoRtaHQjAy2ldKKogWW7F9z4KcH5yBeW/P+9x7H7+8ROfTzNyZM/85y/+cO4gBJoMGGB7+M4D2BqYD5wKjgAPD0l8AHwCPA2uA79t6oK2FRgLXAnOBXWou+xN4ALgJ+KwpsDaAZiRrrGoApHr3b8BMYH0TUE0BXQncXFH4PLAOeA54P74dAZwETAOOrey/ELinDlQTQLOARwpF7wHzgBdrlJ+VYuu+5LaDY98/wOQE9Klu5+oAHQ68m+JgaCh5M1nkNOC7upfG9wOAjelBY2L+E6DOb/o7XwfITJkahz8EjgO+jfmuwMKUSZcAh8XaR8BtwP2AQa0cBLwG7Bfzu4GLegF0JLC5OHhMMvmrMdcNTwPGTCd5BzgjAf4yPuqqJ2L8N6DlOlqpm4VM7+tDicF7Xox3Bl5OXHNUjdueTe46pdjzSsq0o2M+H3iw0/lugDYBJ8Sh2cCjMdbcdxbKBH1XzBcnV11VfDMhHov55cCtMV4dVPAvTN0AfZxecUjhokxubycWHhfrlwG3V7ReA9wQaxuA02M8oXD568mFzlsB+hXYPU6YZdti/HviJANa2acI8qzc+LCEKGbjiBgPL7LzB8B5K0B/FOm+F/BznP4F2CPGXv5VRWsJyL17xnd1/Fg8Kj+2z/FuLvOVKlfMpszGZXDK4LdUAF0HLIm1F1I2Hh/jscFpTrcA1sVWFpLQTo4TkwqGXZCA3ltouhFYFjXOoL6i+DYnEeHKmNsZmK2KlHFmW0BmhJmhSHQCUZqmvTXOB1kylIeiS3DsI6SVVhYyO56JE/Y1+xeBbfb5ylwSqorfCgt8HR9Mgq0p7YfFXDfqzlaAhoSvM+VXq/VugGumvuVBsTmTBuyD/ipuuzRKikuWF+tZtlwfUHW17Oowr4cMcmtWTv9OD+y0JvBPgyL8fnGFWFsBMr1VZsuqSHhmURu5I/GPwa58AoyuWK8VIDdfkCq1FVrRzBOjljUBdSogW2exD7eD6FfqXOZB97wEWO0VOcRxDtj+lB8awPeNDTZm0kdXaQJIBcaOzZlsq9jfnAhYRjqJ++wobWGUzxMHje/WmGUlTQG5/+xkmSfDYs5t2qd0yJbB4aZMqjZqutkH1UobQCqrNvumuGlfPnA5cH6xVhs3Jcq2gDz7cOIb+6MsNvKLgsEtEwLIYkbmVqTWOm7oBZAusVnzPy3LG4B8U7a0S1N62xu1kl4AeYH1bG0K7nP6ua0nML1aKGPYKXpu2TyL/Y8tbq7wrayzo4DyZf4QrgBs6PzT8EeyZ+nVZT1fWHfwf0B1FtoOz7SwJedkcT4AAAAASUVORK5CYII="
+              />
+            </div>
+            <div class="input-field">
+              <label for="location">Where do you want to go?</label>
+            </div>
+          </div>
+
+          <div class="search-box dates">
+            <div class="icon">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAWZJREFUWEftWMFKxDAQfRPiXe+CF70KXvWy35DS0A9QFPwI9R8EYcF72vzEHrx78CzeRPQPFBqJuLBstyazzUIrzalNJm8e8yaTTgk9G9QzPhguIa31NYCr34jeVFXl31sH134OFB0hrgOu/bAIZVl2IISYEtEJgK3Eif8F4IGIzsqyfF7GbkimlNqTUj4C2ElMZBnuwzl3aK19W1xoENJaXwK43TCZH3jn3Lm1dhoitHiaNs2rcVpXRWgkxJEsWAC5mobqU0iykdBwI1QUxaSu64nPGSHEzBgz88/c+WQ51AaUar71ck3lgIvDJsSVps0+mWTcetNm/38J9U4ybpJy7dlJzXXAtWcT6p1k4ymbRyBUJ7pGKoQ/iNv+AsBd10jE7I/qOpRSu1LKJwDbMaAdbN6FEEfGmNc/v6n9Yp7n+0R0D+AYgOzgdNXWT9+5OudOrbUvwc41sXM2XPTfDzbymht6R+gbENGtNAgiHR8AAAAASUVORK5CYII="
+              />
+            </div>
+            <div class="input-field">
+              <label for="dates">Dates</label>
+              <span class="date-range">May 17 - May 31</span>
+            </div>
+          </div>
+
+          <div class="search-box guests">
+            <div class="icon">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAA/tJREFUWEftl11oHFUUx8+Z3U2USC1qFBEVrCgbShsRUcSPffVBbZR778ZYiT6IHyC0as2D4BYfRGupPvgFKoEUMvdcSJYoPq8PUUFqY2MCUgVtRTT4iSjrfsxxb7kjQ7K7M5POQxDv28yc8z+/+c+5H4OwxQZuMR747wCVy+XLgyDYDwC7AWCnc/oLAFjyPO+I7/unN+P+phySUu4BgGkAOL9H0d8BYJKIqmmhUgMJIfYj4uEkhRBxn9b6lSSxYUwqoPHx8V3tdvtTABiwAsz8US6Xm6rX68v2emBgYBcAvAgAN7kCDWa+zhizmhQqMVCpVMoPDw8fQ0RbFBBRF4vF+yqVShAtJoTI2WcAcK+7v7S2tnZDrVZrJYFKDCSEuB0Ra07010ajcVW1Wv2tW5GxsbELC4XC12GPMfPNxpiPMwVSSj3IzO+6TzVnjAkd6FpHSrkAAHe6h3uJ6GimQFLKA64/rO5LRPRMvwJKqcPMbJcFO54iomQTIQm1jVFK3c3M4TSuEtFYv9x1Dt1FRO8lqZWmh65AxG+d6C/NZvOa+fn5n3v00MWFQuEkAGyzzz3Pu8z3/e8zBbJiQogPEPEOJ0wjIyPj62dZpVLxVlZWDCLe4/rtfWNM2EuxTIkdskpuu/iy00vnOuVPPM870G63T7RarXw+ny8i4qHIOvRXq9W6dm5u7rtYEheQCsjmSCmfAIBXkxRAxMe11q8niQ1jUgM5qLi9zK5PDyRt5CjwpoAiny/c7UcBwK7Ey4i4FATBIWPMD2mcOSuHNlMoaU5qh4QQtqGtI6OIeEm3Qsz8oz0XDQ0NHZ+enq4nhbFxiYDcVH4SER8GgB1J8+yBAABOdsDf0FrbiWCv+45YICHE1QBwFBFvjBOLeb7IzJPGmK/6xfUFklLeDwBvA8BgRMTOIHtU/RwAfuohflHkaLs9EvM3Ik5qrf1eUD2BlFI7mNkWPsclNwBgioiOpHAKhRD7EPGF8FDX0agj4k6ttT2ebBhdgWzPrK6uLkZW3G8603mP1tq6knoIIUY9z6sy85UueZGIbu3WU12BhBBT7q1sfiuXy10/Ozt7IjVJJEEptZuZP7N7rbv9NBG9vF6zK5CU0u7Ml7rgChEdPBuYMFdK+XznBZ9116eIKHTsX/kNQEKICxAxPFYE9Xp9+8LCwh9ZAE1MTGxrNpv2F+nMGBwcPG9mZubPqPYGICnlbQDwoQtaJqIzh/qshpTS/oEUnd4tRGR7tbdDSqnHmPk1F/EWET2SFYzVkVK+AwAPOc1HiejNOIcqne5/zgUdJCJ7ndmQUvbV3/DJyuVyKQiCkiXwPK/m+37465MJVJx+7NaRCUUKkf+B4szacg79A8iHZDQr7a+PAAAAAElFTkSuQmCC"
+              />
+            </div>
+            <div class="input-field">
+              <label for="guests">Guests</label>
+              <span class="guest-count">2 travellers</span>
+            </div>
+          </div>
+
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+    </main>
+    <section></section>
   </body>
 </html>
