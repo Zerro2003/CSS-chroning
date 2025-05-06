@@ -285,19 +285,20 @@ body {
   background-size: cover;
 }
 .cards .dv2 {
-  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2024/03/06/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg?impolicy=resizecrop&rh=590&cw=448&cx=-20");
-  height: auto;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2024/03/06/PARTNER_Historic_Chicago_Townhouse.jpg?impolicy=resizecrop&amp;rh=590&amp;cw=448&amp;cx=-20");
+  background-size: cover;
 }
 .cards .dv3 {
-  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2024/03/06/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg?impolicy=resizecrop&rh=590&cw=448&cx=-20");
-  height: auto;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/VRBO_APFT2_BARCELONA_THERIN_HOUSE_1_1460.jpg?impolicy=resizecrop&amp;rh=590&amp;cw=448&amp;cx=-10");
+  background-size: contain;
 }
 .cards .dv4 {
-  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2024/03/06/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg?impolicy=resizecrop&rh=590&cw=448&cx=-20");
-  height: auto;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2024/03/08/PARTNER_Letterbox_Cottage_Cotswolds_v2.jpg?impolicy=resizecrop&amp;rh=590&amp;cw=448&amp;cx=-50");
+  background-size: cover;
 }
 .cards .dv51 {
-  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2024/03/06/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg?impolicy=resizecrop&rh=590&cw=448&cx=-20");
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2024/03/08/6981bbd6_R3.jpg?impolicy=resizecrop&amp;rh=590&amp;cw=448&amp;cx=-60");
+  background-size: cover;
 }
 .cards p {
   position: absolute;
@@ -337,7 +338,6 @@ body {
   border-radius: 12px;
   overflow: hidden;
   width: calc(25% - 15px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .uitk-image-media {
@@ -407,29 +407,162 @@ body {
   color: #666;
   font-size: 14px;
 }
-
-@media (max-width: 992px) {
-  .listing {
-    width: calc(50% - 10px);
-  }
+.the-2s {
+  display: grid;
+  grid-template-columns: repeat(2, 38rem);
+  grid-template-rows: repeat(1, 25rem);
+  gap: 1rem;
+  width: 100%;
+  margin-left: 12px;
+  margin-top: 2rem;
+}
+.circ img,
+.circ1 img {
+  height: 20rem;
+  border-radius: 20px 20px 20px 20px;
+}
+.prgphs :nth-child(1) {
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.beach-accommodations-section {
+  padding: 40px 60px;
+  background-color: #fdfdfd;
+  font-family: sans-serif;
 }
 
-@media (max-width: 576px) {
-  .listing {
-    width: 100%;
-  }
+.section-header h2 {
+  font-size: 28px;
+  margin-bottom: 4px;
 }
-/* @media (max-width: 768px) {
-  .search-container {
-    flex-direction: column;
-  }
 
-  .search-box {
-    width: 100%;
-  }
+.section-dates {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
 
-  .search-button {
-    width: 100%;
-    padding: 15px;
-  }
-} */
+.accommodation-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.accommodation-card {
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.accommodation-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.accommodation-details {
+  padding: 15px;
+}
+
+.accommodation-details .rating {
+  display: inline-block;
+  background-color: #007e63;
+  color: #fff;
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.accommodation-details h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+  line-height: 1.4;
+}
+
+.accommodation-details .location {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.accommodation-details .price {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.accommodation-details .price span {
+  display: block;
+  font-weight: normal;
+  font-size: 13px;
+  color: #888;
+}
+
+.accommodation-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #ffffff;
+  border: 1px solid #7676762d;
+  border-radius: 18px;
+  padding: 40px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+/* Left text block */
+.banner-text {
+  max-width: 360px;
+  flex: 1;
+}
+
+.banner-text h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.banner-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Cards row */
+.banner-cards {
+  display: flex;
+  gap: 16px;
+  flex: 2;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* Each card */
+.card {
+  position: relative;
+  width: 160px;
+  height: 220px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid black;
+  flex-shrink: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card span {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
